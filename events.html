@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
@@ -48,13 +49,39 @@
             .nav-tabs li button {
                 color: #12232E;
             }
-        </style>
+            @media all and (max-width: 400px) {
+                img {
+                    width: 150px;
+                    height: auto;
+                }
+            }
+            @media screen and (max-width:320px) {
+                .imgSize{
+                    max-width: 250px;
+                    height: auto;
+                }
+                .container {
+                    width: 250px;
+                    padding: 0.5cm;
+                }
+            }
+            @media screen and (min-width:320px) and (max-width:576px) {
+                .imgSize{
+                    max-width: 400px;
+                    height: auto;
+                }
+                .container {
+                    width: 400px;
+                    padding: 1cm;
+                }
+            }
+       </style>
     </head>
 
     <body>
         <header id="luxbar" >
 			<input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
-   <div class="luxbar-menu luxbar-menu-right" style="background-color: #12232E; color: rgb(230, 228, 228);">
+   <div class="luxbar-menu luxbar-menu-right luxbar-menu-material-bluegrey">
        <ul class="luxbar-navigation">
            <li class="luxbar-header">
              <a href="index.html"><img src="images/finalLogo.png" width="60px" height="30px" style="margin-left:20px;"></a>
@@ -85,31 +112,6 @@
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="past-events" role="tabpanel" aria-labelledby="past-events-tab">
-                <div class = "container">
-                    <div class="card mb-3 w-100">
-                        <div class="row g-0">
-                            <div class="col-md-12 col-lg-4">
-                                <img src="images/android.jpeg" class="img-fluid rounded-start imgSize responsive" alt="...">
-                            </div>
-                            <div class="col-md-12 col-lg-8 d-flex align-items-center">
-                                <div class="card-body m-2">
-                                    <div class = "row d-flex align-self-center">
-                                        <div class = "col-lg-8 col-md-12"><h3>ASJ Session-2 </h3></div>
-                                        <div class = "col-lg-4 col-md-12"><span class="badge bg-primary mx-auto rounded-pill d-inline-flex align-self-center float-md-start float-lg-end">Android</span></div>
-                                    </div>
-                                    <div class = "py-3">
-                                        <p class="card-text" style = "font-size:larger"><b>Speaker:</b> Damarla Venkata Sai Chandana</p>
-                                        <div class = "row">
-                                            <div class = "col-lg-6 col-md-12" style = "font-size:larger"><span><i class="bi bi-calendar pe-2"></i><!--<b>Date: </b>-->Dec 13, 2021</span></div>
-                                            <div class = "col-lg-6 col-md-12" style = "font-size:larger"><span><i class="bi bi-alarm pe-2"></i><!--<b>Time: </b>-->7:00pm</span></div>
-                                        </div>
-                                    </div>
-                                    <div><button class="btn btn-primary" type="button">Recording</button></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class = "container">
                     <div class="card mb-3 w-100">
                         <div class="row g-0">
@@ -251,9 +253,9 @@
                 <div style="text-align: center;" class="col l4 offset-l2 s12">
                     <h5 style="margin-top: 25px; padding-left: 40px; font-size: 1.7em;" class="white-text">Social Links</h5>
                     <ul style="display: inline-flex; list-style-type: none; font-size: 1.5em;">
-                      <li style="margin-top: 10px; padding: 7px 15px;"><a class="grey-text text-lighten-3" target="_blank" href="https://www.instagram.com/gdsc_gnits/"><i class="fab fa-instagram fa-lg"></i></a></li>
-                      <li style="margin-top: 10px; padding: 7px 15px;"><a class="grey-text text-lighten-3" target="_blank" href="https://www.linkedin.com/company/gdsc-gnits/"><i class="fab fa-linkedin fa-lg"></i></a></li>
-                      <li style="margin-top: 10px; padding: 7px 15px;"><a class="grey-text text-lighten-3" href="https://gdsc.community.dev/g-narayanamma-institute-of-technology-science-hyderabad/"><i class="far fa-envelope fa-email fa-lg"></i></a></li>
+                      <li style="margin-top: 10px; padding: 7px 15px;"><a class="grey-text text-lighten-3" target="_blank" href="https://www.instagram.com/gdsc_gnits/"><i class="fab fa-instagram fa-lg" style="color: white;"></i></a></li>
+                      <li style="margin-top: 10px; padding: 7px 15px;"><a class="grey-text text-lighten-3" target="_blank" href="https://www.linkedin.com/company/gdsc-gnits/"><i class="fab fa-linkedin fa-lg" style="color: white;"></i></a></li>
+                      <li style="margin-top: 10px; padding: 7px 15px;"><a class="grey-text text-lighten-3" href="https://gdsc.community.dev/g-narayanamma-institute-of-technology-science-hyderabad/" style="color: white;"><i class="far fa-envelope fa-email fa-lg"></i></a></li>
                     </ul>
                 </div>
               </div>
